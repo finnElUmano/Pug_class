@@ -1,0 +1,10 @@
+extend component/plantilla.pug
+block contexto
+  section.principal
+    .aside
+      h1= titulos[4]
+      ul
+        each text in enlaces
+          li=text
+    main.contenido2
+      +caja-s(titulos[0], text, text)

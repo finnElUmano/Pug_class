@@ -1,0 +1,19 @@
+-var text = " Lorem ipsum dolor sit amet Ad repellendus consectetur Libero mollitia ipsa rem quia totam p unde et facere, iure beat nisi exercitationem, ab aliasrem quia totam p unde et facere," 
+-var titulos = ["Titulo Principal", "Subtitulo-0", "Subtitulo-1","Subtitulo-2", "Menu"]
+-var enlaces = ['Acerca', 'Noticias', 'Contacto']
+//- -var usuario = "Jaime Gonzales" //- "variable de prueba if else"
+//-  MIXIN
+mixin caja(imagen, titulo, contenido)
+	.caja
+		.caja__imagen: img(src="images/"+imagen)
+		.caja__contenido
+			h3=titulo 
+			p=contenido 
+
+mixin caja-s(titulo, contenido1, contenido2)
+	.caja-ss
+		.caja__contenido
+			h3=titulo 
+			p=contenido1 
+			p=contenido2
+			a.button Ver Mas.
